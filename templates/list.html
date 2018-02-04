@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+<div>
+<h1>BUILT WITH</h2>
+</div>
+
+<div>
+Site: {{ url }}
+</div>
+
+<div>
+</br>
+<td>{% for key,val in bui.items() %}</td>
+<ul>{{ key }}</ul> 
+<ul>{{ val }}</ul>
+{% endfor %}
+<a href="{{ url_for('index') }}"><input type="submit" value="back"></a>
+</div>
+
+<div class="page-footer">
+<p>Code by Newton Galiza</p>
+</div>
+
+</body>
+</html>
