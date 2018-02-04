@@ -9,7 +9,7 @@
 <body>
 
 <div>
-<h1>BUILT WITH</h2>
+<h1>BUILT WITH</h1>
 </div>
 
 <div>
@@ -17,11 +17,13 @@ Site: {{ url }}
 </div>
 
 <div>
-</br>
 <td>{% for key,val in bw.items() %}</td>
 <ul>{{ key }}</ul> 
 <ul>{{ val }}</ul>
 {% endfor %}
+</div>
+
+<div>
 <a href="{{ url_for('index') }}"><input type="submit" value="back"></a>
 </div>
 
