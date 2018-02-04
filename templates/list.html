@@ -16,14 +16,10 @@
 Site: {{ url }}
 </div>
 
-<div>
-<table>
 {% for key,val in bw.items() %}
 {{ key }}
 {{ val }}
 {% endfor %}
-</table>
-</div>
 
 <div>
 <a href="{{ url_for('index') }}"><input type="submit" value="back"></a>
